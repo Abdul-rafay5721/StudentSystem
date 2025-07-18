@@ -7,6 +7,11 @@ files:
     overwrite: true
 
 hooks:
+  BeforeInstall:
+    - location: scripts\clean-wwwroot.ps1
+      timeout: 60
+      runas: Administrator
+
   AfterInstall:
     - location: scripts\health-check.ps1
       timeout: 60
