@@ -22,6 +22,4 @@ phases:
 
 artifacts:
   files:
-    - student-app.zip
-  base-directory: .
-  discard-paths: yes
+    - '**/*'
