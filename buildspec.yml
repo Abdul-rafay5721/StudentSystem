@@ -16,10 +16,11 @@ phases:
   post_build:
     commands:
       - echo "Publishing the project..."
-      - dotnet publish -c Release -o ./StudentManagementSystemPublished
-      - echo "Zipping the publish folder for deployment..."
+      - dotnet publish -c Release -o StudentManagementSystemPublished
       - echo "Build and publish finished successfully."
 
 artifacts:
   files:
     - '**/*'
+  base-directory: StudentManagementSystemPublished
+  discard-paths: no
