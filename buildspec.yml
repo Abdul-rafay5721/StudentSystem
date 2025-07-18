@@ -16,9 +16,9 @@ phases:
   post_build:
     commands:
       - echo "Publishing the project..."
-      - dotnet publish -c Release -o ./output
+      - dotnet publish -c Release -o ./StudentManagementSystemPublished
       - echo "Zipping the publish folder for deployment..."
-      - zip -r student-app.zip ./output
+      - zip -r student-app.zip ./StudentManagementSystemPublished
       - echo "Build and publish finished successfully."
 
 artifacts:
