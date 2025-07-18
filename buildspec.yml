@@ -3,22 +3,26 @@
 phases:
   install:
     runtime-versions:
-      dotnet: 6.0 # or 7.0/8.0 based on your project
+      dotnet: 8.0
     commands:
-      - echo Installing .NET dependencies...
+      - echo "Installing dependencies..."
+      - dotnet restore
 
   build:
     commands:
-      - echo Building the project...
-      - dotnet build --configuration Release
+      - echo "Building the project..."
+      - dotnet build --configuration Release --no-restore
 
   post_build:
     commands:
-      - echo Publishing the project...
-      - dotnet publish -c Release -o ./publish
-      - echo Build and publish completed on `date`
+      - echo "Publishing the project..."
+      - dotnet publish -c Release -o ./output
+      - echo "Zipping the publish folder for deployment..."
+      - zip -r student-app.zip ./output
+      - echo "Build and publish finished successfully."
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: ./publish
+    - student-app.zip
+  base-directory: .
+  discard-paths: yes
