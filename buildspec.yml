@@ -6,7 +6,6 @@ phases:
       dotnet: 6.0 # or 7.0/8.0 based on your project
     commands:
       - echo Installing .NET dependencies...
-      - dotnet restore
 
   build:
     commands:
