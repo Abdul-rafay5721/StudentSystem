@@ -18,7 +18,6 @@ phases:
       - echo "Publishing the project..."
       - dotnet publish -c Release -o ./StudentManagementSystemPublished
       - echo "Zipping the publish folder for deployment..."
-      - zip -r student-app.zip ./StudentManagementSystemPublished
       - echo "Build and publish finished successfully."
 
 artifacts:
