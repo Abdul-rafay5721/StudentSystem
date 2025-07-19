@@ -1,5 +1,6 @@
 version: 0.0
 os: windows
+
 files:
   - source: /
     destination: C:\inetpub\wwwroot\StudentManagmentSystem
@@ -7,7 +8,16 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts\before_install.ps1
+    - location: scripts\stop-iis.ps1
       timeout: 60
-      runas: Administrator
+      runas: administrator
 
+  AfterInstall:
+    - location: scripts\cleanup-old.ps1
+      timeout: 60
+      runas: administrator
+
+  ApplicationStart:
+    - location: scripts\start-iis.ps1
+      timeout: 60
+      runas: administrator
