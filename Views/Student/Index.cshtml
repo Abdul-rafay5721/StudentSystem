@@ -1,0 +1,46 @@
+﻿@model List<StudentData.Models.Student>
+@{
+    ViewData["Title"] = "Students";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-dark">🎓 Students</h2>
+        <a asp-controller="Student" asp-action="Create" class="btn btn-primary shadow-sm">
+            <i class="bi bi-plus-lg"></i> Add Student
+        </a>
+    </div>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="table-responsive shadow rounded">
+            <table class="table table-bordered align-middle mb-0 bg-white">
+                <thead class="table-secondary">
+                    <tr>
+                        <th style="width: 5%;">#</th>
+                        <th style="width: 30%;">Name</th>
+                        <th style="width: 15%;">Age</th>
+                        <th style="width: 40%;">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var student in Model)
+                    {
+                        <tr>
+                            <td>@student.Id</td>
+                            <td>@student.Name</td>
+                            <td>@student.Age</td>
+                            <td>@student.Email</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center shadow-sm rounded">
+            No students found. Click "Add Student" to get started.
+        </div>
+    }
+</div>

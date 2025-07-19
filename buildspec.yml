@@ -1,0 +1,26 @@
+﻿version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 8.0
+    commands:
+      - echo "Installing dependencies..."
+      - dotnet restore
+
+  build:
+    commands:
+      - echo "Building the project..."
+      - dotnet build --configuration Release --no-restore
+
+  post_build:
+    commands:
+      - echo "Publishing the project..."
+      - dotnet publish -c Release -o StudentManagementSystemPublished
+      - echo "Build and publish finished successfully."
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: StudentManagementSystemPublished
+  discard-paths: no

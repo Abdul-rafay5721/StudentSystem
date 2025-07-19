@@ -1,0 +1,13 @@
+﻿version: 0.0
+os: windows
+
+files:
+  - source: \StudentManagementSystemPublished
+    destination: C:\inetpub\wwwroot
+    overwrite: true
+
+hooks:
+  AfterInstall:
+    - location: scripts\health-check.ps1
+      timeout: 60
+      runas: Administrator
