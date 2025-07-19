@@ -166,3 +166,5 @@ C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Debug\net8.0\S
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Debug\net8.0\StudentD.59015440.Up2Date
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Debug\net8.0\scopedcss\projectbundle\StudentData.bundle.scp.css
+C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\bin\Debug\net8.0\appspec.yml
+C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Debug\net8.0\StudentData.sourcelink.json
