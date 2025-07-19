@@ -15,9 +15,15 @@
   </ItemGroup>
 
   <ItemGroup>
-  <Content Include="scripts\**\*">
-    <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-  </Content>
-</ItemGroup>
+    <!-- Include the scripts folder -->
+    <Content Include="scripts\**\*">
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <!-- Include the appspec.yml file -->
+    <Content Include="appspec.yml">
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>
