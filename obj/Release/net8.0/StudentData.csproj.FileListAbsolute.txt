@@ -167,4 +167,3 @@ C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\StudentData.pdb
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\StudentData.genruntimeconfig.cache
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\ref\StudentData.dll
-C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\bin\Release\net8.0\appspec.yml

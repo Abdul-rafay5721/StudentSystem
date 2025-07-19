@@ -4,3 +4,10 @@ files:
   - source: /
     destination: C:\inetpub\wwwroot\StudentManagmentSystem
     overwrite: true
+
+hooks:
+  BeforeInstall:
+    - location: scripts\before_install.ps1
+      timeout: 60
+      runas: Administrator
+

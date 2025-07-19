@@ -1,4 +1,5 @@
-C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\appspec.yml
+C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\scripts\clean-wwwroot.ps1
+C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\scripts\health-check.ps1
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\StudentData.exe
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Abdul Rafay\Desktop\Asp apps\StudentData\StudentData\obj\Release\net8.0\PubTmp\Out\appsettings.json
